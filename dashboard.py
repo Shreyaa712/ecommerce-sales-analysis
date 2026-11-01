@@ -448,8 +448,11 @@ with right:
     fig_country.update_layout(
         xaxis_title="Recorded sales",
         yaxis_title="",
-        showlegend=False
+        showlegend=False,
+        margin=dict(l=20, r=80, t=40, b=20),
+        yaxis=dict(automargin=True)
     )
+
 
     st.plotly_chart(
         fig_country,
@@ -490,7 +493,7 @@ with left:
     )
 
 with right:
-    customer_sales["CustomerID"] = customer_sales["CustomerID"].astype(str)
+    customer_sales["CustomerID"] = customer_sales["CustomerID"].astype(int).astype(str) 
 
     fig_customer = px.bar(
         customer_sales,
