@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 # =====================================================
 st.set_page_config(
     page_title="E-commerce Intelligence",
-    page_icon="◆",
+    page_icon=" ",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -210,7 +210,7 @@ countries = sorted(
 )
 
 selected_country = st.sidebar.selectbox(
-    "🌍 Country",
+    " Country",
     ["All Countries"] + countries
 )
 
@@ -218,7 +218,7 @@ min_date = original_df["InvoiceDate"].min().date()
 max_date = original_df["InvoiceDate"].max().date()
 
 selected_dates = st.sidebar.date_input(
-    "📅 Date range",
+    " Date range",
     value=(min_date, max_date),
     min_value=min_date,
     max_value=max_date
