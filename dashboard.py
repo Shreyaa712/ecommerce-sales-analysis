@@ -330,17 +330,23 @@ def polish_chart(fig, height=330):
         showlegend=False
     )
 
+    
     fig.update_xaxes(
         showgrid=True,
         gridcolor="#EDF0F7",
         zeroline=False,
-        linecolor=BORDER
+        linecolor=BORDER,
+        tickfont=dict(color=TEXT, size=11),
+        title_font=dict(color=TEXT, size=12)
     )
     fig.update_yaxes(
         showgrid=False,
         zeroline=False,
-        linecolor=BORDER
+        linecolor=BORDER,
+        tickfont=dict(color=TEXT, size=11),
+        title_font=dict(color=TEXT, size=12)
     )
+
 
     return fig
 
