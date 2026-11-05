@@ -32,7 +32,7 @@ The project combines:
 │   ├── 01_data_understanding.ipynb
 │   ├── 03Data_integration.ipynb
 │   ├── 05_eda.ipynb
-│   └── Untitled.ipynb
+│
 ├── visuals/                     # Project visuals/assets
 └── README.md                    # Project documentation
 ```
@@ -135,7 +135,7 @@ This project does not currently include a license file.
 
 ## Author
 
-Created by Shreyaa712.
+Created by Shreya Salunkhe
 
 ## Notes
 
